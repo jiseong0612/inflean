@@ -30,4 +30,16 @@ public class ConfigurationSingletonTest {
 		
 		//세 놈다 같다.
 	}
+	
+	@Test
+	public void AppConfigTest() {
+		ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		AppConfig bean = ac.getBean(AppConfig.class);
+		MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
+		
+		
+		System.out.println("AppConfig 클래스 네임 : "+ bean.getClass()); // class hello.core.AppConfig$$EnhancerBySpringCGLIB$$989baddf
+		System.out.println("memberService 클래스 네임 : "+ memberService.getClass()); // class hello.core.member.MemberServiceImpl
+	}
 }

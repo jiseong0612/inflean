@@ -23,7 +23,6 @@ public class AppConfig {
 		return new MemberServiceImpl(memberRepository());
 	}
 
-	// 이걸 통해서 중복 제거
 	@Bean
 	public MemberRepository memberRepository() {
 		number ++;
