@@ -15,8 +15,8 @@ public class SingletonTest {
 	void pureContainer() {
 		AppConfig appConfig = new AppConfig();
 		
-		MemberService memberService1 = appConfig.memberService();
-		MemberService memberService2 = appConfig.memberService();
+		//MemberService memberService1 = appConfig.memberService();
+		//MemberService memberService2 = appConfig.memberService();
 		
 //		System.out.println(memberService1);
 //		System.out.println(memberService2);

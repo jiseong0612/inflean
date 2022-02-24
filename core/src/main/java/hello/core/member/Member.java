@@ -10,4 +10,8 @@ public class Member {
 	private String name;
 	private Grade grade;
 	
+	public static void main(String[] args) {
+		Member member = new Member(1L, "userA", Grade.VIP);
+		System.out.println(member);
+	}
 }
