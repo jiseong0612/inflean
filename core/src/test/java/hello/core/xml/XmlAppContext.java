@@ -10,8 +10,8 @@ import hello.core.member.MemberService;
 public class XmlAppContext {
 	@Test
 	void xmlTest() {
-		ApplicationContext ac = new GenericXmlApplicationContext("appConfig.xml");
-		MemberService memberService = ac.getBean("memberSerivce", MemberService.class);
-		Assertions.assertThat(memberService).isInstanceOf(MemberService.class);
+//		ApplicationContext ac = new GenericXmlApplicationContext("appConfig.xml");
+//		MemberService memberService = ac.getBean("memberSerivce", MemberService.class);
+//		Assertions.assertThat(memberService).isInstanceOf(MemberService.class);
 	}
 }
